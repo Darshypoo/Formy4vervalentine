@@ -4,20 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surprise!</title>
-    <!-- Update path for styles.css if it's in a 'css' folder -->
-    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* General Body and Page Styling */
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+            background: linear-gradient(to bottom, #ffe6e6, #ffcccc); /* Soft gradient */
+            color: #ff3366; /* Bright pink text */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 5px solid #ff3366; /* Border in cute pink */
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ff3366;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #ff3366;
+            margin-top: 30px;
+            font-style: italic;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #b30000;
+        }
+
+        .btn {
+            background-color: #ff3366; /* Cute pink button */
+            color: white;
+            font-size: 1.4rem;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #ff6699; /* Lighter pink when hovered */
+            transform: scale(1.1); /* Button expands slightly */
+        }
+
+        .btn:active {
+            background-color: #ff0066; /* Darker pink when clicked */
+            transform: scale(0.9); /* Button shrinks when clicked */
+        }
+
+        .qr-code {
+            width: 300px;
+            height: 300px;
+            border: 8px solid #ff3366; /* Pink border */
+            margin-top: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .qr-code:hover {
+            transform: scale(1.1); /* Slight zoom on hover */
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 1.2rem;
+            color: #ff3366;
+        }
+
+        /* Heart Emoji Animation */
+        .heart {
+            font-size: 2rem;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .emoji {
+            font-size: 3rem; /* Larger emoji */
+            margin: 0 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Deymnn, that was impressive, baby! 😘</h1>
-        <p>As a reward, here’s something special for you:</p>
+        <h1>💖 Deymnn, that was impressive, baby! 😘💖</h1>
+        <p>As a reward, here’s something special for you! 💝</p>
         
         <!-- Embed Spotify Playlist Link -->
         <a href="https://open.spotify.com/playlist/4MFr5pyC8jpuFEp5WPXQ7p?si=KC0PJGVJQFGklxRJPwTSgA&pi=rphihOtqTquWF&pt=972ba6dd9e0eb4268a8e6eac8ada0093" target="_blank">
-            <button class="btn">Click to Listen to Your Special Playlist 🎶</button>
+            <button class="btn">🎶 Click to Listen to Your Special Playlist 🎶</button>
         </a>
         
-        <!-- OR embed a QR code (use any online QR code generator like https://www.qr-code-generator.com/) -->
-        <h2>Scan this barcode to unlock the next surprise:</h2>
-        <!-- Direct URL for QR code image -->
-        <img src="https://storage.me-qr.com/qr/171522628.png" alt="QR Code" class="qr-c
+        <h2>Scan this barcode to unlock the next surprise: 🔑</h2>
+
+        <!-- Embed QR Code with anchor tag -->
+        <a href="https://me-qr.com" border="0" style="cursor:pointer; display:block;">
+            <img src="https://storage.me-qr.com/qr/171522628.png" alt="QR Code" class="qr-code">
+        </a>
+
+        <footer>
+            <p>Created with ❤️ by your forever valentine! 💘</p>
+            <span class="heart">💖</span>
+            <span class="emoji">🌹</span><span class="emoji">😍</span><span class="emoji">💌</span>
+        </footer>
+    </div>
+</body>
+</html>
